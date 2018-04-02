@@ -6,15 +6,13 @@ class Layout extends React.Component{
         super()
         this.state = {title : 'Will'}
     }
+    changeTitle(title){
+        this.setState({title})
+    }
     render(){
-        setTimeout(() => {
-            this.setState({
-                title: 'welcome will!'
-            })
-        }, 1000);
         return (
             <div>
-                <Header title={this.state.title}/>
+                <Header changeTitle={this.changeTitle.bind(this)} title={this.state.title}/>
                 <Footer />
             </div>
         )
