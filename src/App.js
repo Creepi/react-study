@@ -6,7 +6,7 @@ class App extends Component {
     super()
     this.name = "tito"
   }
-  render() {
+  render(){
     return (
       <h1>It's working {this.name}</h1>
     );
