@@ -1,8 +1,12 @@
 import React from 'react'
 class Title extends React.Component{
+    
     render(){
         return (
-            <header>Welcome</header>
+            <div>
+                <header>{this.props.title}</header>
+            </div>
+            
         )
     }
 }
