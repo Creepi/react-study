@@ -7,11 +7,11 @@ import Layout from './components/Layout';
 import registerServiceWorker from './registerServiceWorker';
 
 ReactDOM.render(
-    <Router history={browserHistory}>
+    <BrowserRouter>
         <Route path="/" component={Layout}>
 
         </Route>
-    </Router>,
+    </BrowserRouter>,
      document.getElementById('root')
 );
 registerServiceWorker();
